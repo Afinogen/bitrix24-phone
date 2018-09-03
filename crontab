@@ -1,0 +1,5 @@
+0 09-21 * * 1-5 php bin/hour.php
+0 11-18 * * 6-7 php bin/hour.php
+0 18 * * * php bin/day.php
+0 18 * * 5 php bin/week.php
+0 0 1.15 * * php bin/update-token.php

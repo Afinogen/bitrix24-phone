@@ -1,0 +1,44 @@
+<br>
+<br>
+<b>Статистика за период с {date-start} по {date-end}:</b>
+<table>
+    <thead>
+    <tr>
+        <th></th>
+        <th>Количество</th>
+        <th>%</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Всего уникальных входящих звонков</td>
+        <td>{quantity-all}</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Количество не обработанных пропущенных уникальных звонков</td>
+        <td>{quantity-skipped-not-processed}</td>
+        <td>{percent-not-processed-skipped}</td>
+    </tr>
+    <tr>
+        <td>Пропущено уникальных звонков</td>
+        <td>{quantity-skipped}</td>
+        <td>{percent-skipped}</td>
+    </tr>
+    <tr>
+        <td>Из них обработано:</td>
+        <td>{quantity-skipped-processed}</td>
+        <td>{percent-skipped-processed}</td>
+    </tr>
+    <tr>
+        <td>Из них не обработано:</td>
+        <td>{quantity-skipped-not-processed}</td>
+        <td>{percent-skipped-not-processed}</td>
+    </tr>
+    <tr>
+        <td>Сам перезвонил</td>
+        <td>{quantity-recall}</td>
+        <td>{percent-recall}</td>
+    </tr>
+    </tbody>
+</table>

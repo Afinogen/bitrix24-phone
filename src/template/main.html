@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        table {
+            border-collapse: collapse; /* Убираем двойные линии между ячейками */
+        }
+
+        td, th {
+            padding: 3px; /* Поля вокруг содержимого таблицы */
+            border: 1px solid black; /* Параметры рамки */
+        }
+
+        th {
+            background: #b0e0e6; /* Цвет фона */
+        }
+    </style>
+</head>
+<body>
+За период с {date-start} по {date-end}:<br>
+<b>Не обработано звонков:</b>
+<table>
+    <thead>
+    <tr>
+        <th>Время пропуска</th>
+        <th>Номер</th>
+        <th>Пропустил</th>
+    </tr>
+    </thead>
+    <tbody>
+    {items-in}
+    </tbody>
+</table>
+Всего не обработанных: {total-in}
+<br><br>
+<b>Всего обработанных:</b>
+<table>
+    <thead>
+    <tr>
+        <th>Время пропуска</th>
+        <th>Номер</th>
+        <th>Пропустил</th>
+        <th>Время перезвона</th>
+        <th>Перезвонил</th>
+    </tr>
+    </thead>
+    <tbody>
+    {items-out}
+    </tbody>
+</table>
+Всего обработанных: {total-out}
+{stat}
+</body>
+</html>
